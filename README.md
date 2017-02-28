@@ -1,7 +1,7 @@
 
 ![alt tag](https://raw.github.com/conekta/conekta-.net/master/readme_files/cover.png)
 
-# Conekta .NET v.1
+# Conekta .NET v0.1
 
 This is a .net library that allows interaction with https://api.conekta.io API.
 

@@ -8,7 +8,7 @@ namespace conekta
 	public class PaymentSource : Resource
 	{
 		public string id { get; set; }
-		public string type { get; set; }
+		public new string type { get; set; }
 
 		/* In case card token */
 		public string token_id { get; set; }

@@ -15,7 +15,7 @@ namespace conekta
 		public bool shippable { get; set; }
 		public string[] tags { get; set; }
 		public string brand { get; set; }
-		public string type { get; set; }
+		public new string type { get; set; }
 		public string parent_id { get; set; }
 		public string id { get; set; }
 

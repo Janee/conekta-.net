@@ -129,8 +129,6 @@ namespace ConektaTest
 			  }]
 			}");
 
-			LineItem line_item = (LineItem)order.line_items.at(0);
-
 			int size = order.line_items.data.Length;
 
 			order.line_items.next_page();
@@ -452,7 +450,6 @@ namespace ConektaTest
 
 			order = new Order().find(order.id);
 
-			LineItem line_item = (LineItem)order.line_items.at(0);
 
 			//line_item = line_item.update(@"{
 			//	""name"": ""Box S1s"",
@@ -523,16 +520,6 @@ namespace ConektaTest
 	        }");
 
 			Assert.AreEqual(order.id.GetType().ToString(), "System.String");
-
-			order = new Order().find(order.id);
-
-			TaxLine tax_line = order.createTaxLine(@"{
-			   ""description"": ""IVA"",
-			   ""amount"": 600,
-			   ""contextual_data"": {
-			     ""random_key"": ""random_value""
-			   }
-			}");
 
 			order = new Order().find(order.id);
 
